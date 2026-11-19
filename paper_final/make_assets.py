@@ -227,17 +227,17 @@ for m in ["B0", "B1", "B2", "B3", "ours", "U0"]:
     out.append(n + " & " + " & ".join(cells) + r"\\")
 out.append(r"\bottomrule\end{tabular}\end{table}")
 # ablation table
-out.append(r"\begin{table}[t]\caption{Ablations in C3. AP@0.7 is from the LiDAR-pair run (Experiment A). The last two columns give variant $-$ ours (points, 95\% scene CI) for Experiment A (LiDAR pair) and Experiment C (camera ego).}\label{tab:abl}")
-out.append(r"\centering\scriptsize\setlength{\tabcolsep}{1.4pt}\begin{tabular}{lccc}\toprule Variant & AP@0.7 & $\Delta$ Exp.\ A & $\Delta$ Exp.\ C\\\midrule")
+out.append(r"\begin{table}[t]\caption{Ablations in C3 (the full policy has AP@0.7 = 0.796 in Experiment A). Variant $-$ ours, in AP@0.7 points with 95\% scene CI, for Experiment A (LiDAR pair) and Experiment C (camera ego).}\label{tab:abl}")
+out.append(r"\centering\scriptsize\setlength{\tabcolsep}{4pt}\begin{tabular}{lcc}\toprule Variant & $\Delta$ Exp.\ A & $\Delta$ Exp.\ C\\\midrule")
 def flipci(t): return f"{-t['delta_AP'] * 100:+.2f} [{-t['scene_CI_hi'] * 100:+.2f}, {-t['scene_CI_lo'] * 100:+.2f}]"
 def dirci(t): return f"{t['delta_AP'] * 100:+.2f} [{t['scene_CI_lo'] * 100:+.2f}, {t['scene_CI_hi'] * 100:+.2f}]"
 ec_a1, ec_a2, ec_a3 = T_EC["A1: ours - no-quality, C3"], T_EC["A2: ours - no-need, C3"], T_EC["H2/A3: ours - no-admission, C3"]
 ab = [("A1", "A1 no quality", flipci(T_MAIN["A1: ours - no-quality, C3"]), flipci(ec_a1)), ("A2", "A2 no need", flipci(T_MAIN["A2: ours - no-need, C3"]), flipci(ec_a2)),
       ("A3", "A3 no admission", flipci(T_MAIN["H2/A3: ours - no-admission, C3"]), flipci(ec_a3)),
       ("A7", "A7 oracle feedback", dirci(T_MAIN["A7: oracle same-frame feedback - ours, C3"]), "--"), ("R1", "R1 one retry", dirci(T_MAIN["R1: ours + one retry - ours, C3"]), "--")]
-r = pick(M, "C3", "ours"); out.append(f"Ours (full) & {f3(r['AP@0.7'])} & -- & --" + r"\\")
+r = pick(M, "C3", "ours"); out.append(f"Ours (full) & -- & --" + r"\\")
 for k, lab, d1, d2 in ab:
-    r = pick(M, "C3", k); out.append(f"{lab} & {f3(r['AP@0.7'])} & {d1} & {d2}" + r"\\")
+    r = pick(M, "C3", k); out.append(f"{lab} & {d1} & {d2}" + r"\\")
 out.append(r"\bottomrule\end{tabular}\end{table}")
 # precision recall
 PR = pd.read_csv(os.path.join(DATA, "main", "precision_recall.csv"))

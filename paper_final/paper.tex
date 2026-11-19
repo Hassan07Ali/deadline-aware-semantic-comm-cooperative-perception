@@ -65,7 +65,7 @@ Section~\ref{sec:related} reviews related work, Section~\ref{sec:method} defines
 \section{Related Work}\label{sec:related}
 \textbf{Task-oriented communication for driving.} Semantic communication has been applied to edge-assisted driving \cite{feng2025}, stereo 3D detection \cite{cao2025}, lane-change planning \cite{zhang2026lane}, sensing--communication integration \cite{yang2025} and multimodal vehicle networks \cite{du2025}. Platform studies include near-sensor feature extraction for roadside perception \cite{zhang2025near} and V2V/V2I semantic-communication experiments \cite{li2025}. These works mostly report rate, latency or planning metrics; only \cite{cao2025} reports detection AP, with a single stereo camera.
 
-\textbf{Communication-efficient cooperative perception.} Where2comm \cite{hu2022where2comm} shares features chosen from a spatial confidence map. CoSDH \cite{xu2025cosdh} combines the sender's confidence with the receiver's low point density. WhisperNet \cite{chen2026whisper} lets the receiver plan the budget. PragComm \cite{hu2026prag} also chooses representations and collaborators and compensates delayed messages. S2CP \cite{liu2025} and \cite{sheng2026} study noisy channels. Timing is treated by CooperTrim \cite{mukhopadhyay2026} (latency and loss by masking), by Zhu et al.\ \cite{zhu2026} (freshness scheduling), by Fresh2comm \cite{wu2025fresh} (power allocation against the largest delay) and by JigsawComm \cite{wang2025jigsaw} (delay and drop tests).
+\textbf{Communication-\allowbreak efficient cooperative perception.} Where2comm \cite{hu2022where2comm} shares features chosen from a spatial confidence map. CoSDH \cite{xu2025cosdh} combines the sender's confidence with the receiver's low point density. WhisperNet \cite{chen2026whisper} lets the receiver plan the budget. PragComm \cite{hu2026prag} also chooses representations and collaborators and compensates delayed messages. S2CP \cite{liu2025} and \cite{sheng2026} study noisy channels. Timing is treated by CooperTrim \cite{mukhopadhyay2026} (latency and loss by masking), by Zhu et al.\ \cite{zhu2026} (freshness scheduling), by Fresh2comm \cite{wu2025fresh} (power allocation against the largest delay) and by JigsawComm \cite{wang2025jigsaw} (delay and drop tests).
 
 \textbf{Heterogeneous fusion.} HEAL \cite{lu2024heal} fuses features from different sensor types with a pyramid network trained on OPV2V \cite{xu2022opv2v}. Its camera encoder follows Lift-Splat-Shoot \cite{philion2020} and its LiDAR encoder is PointPillars \cite{lang2019}.
 
@@ -74,7 +74,7 @@ Table~\ref{tab:related} summarises what the closest selectors decide and test (t
 \begin{table*}[t]
 \caption{Summary of the closest studies. ``Deadline'' means a hard time limit on result availability.}\label{tab:related}
 \centering\scriptsize\setlength{\tabcolsep}{3pt}
-\begin{tabular}{p{2.55cm}p{3.5cm}p{3.35cm}p{2.0cm}p{1.5cm}p{3.35cm}}
+\begin{tabular}{>{\raggedright\arraybackslash}p{2.55cm}>{\raggedright\arraybackslash}p{3.5cm}>{\raggedright\arraybackslash}p{3.35cm}>{\raggedright\arraybackslash}p{2.0cm}>{\raggedright\arraybackslash}p{1.5cm}>{\raggedright\arraybackslash}p{3.35cm}}
 \toprule
 Study & What decides what is sent & Delay / loss / deadline & Sensor degradation & Trained & Metric and time point\\\midrule
 Where2comm \cite{hu2022where2comm} & Sender confidence map; request map & None (bandwidth only) & Pose noise & Yes & AP@0.5/0.7, after reception\\
@@ -185,7 +185,7 @@ Table~\ref{tab:dev} lists every difference between the Phase 2 methodology and w
 \begin{table*}[t]
 \caption{Deviations from the Phase 2 plan (from the project changes log).}\label{tab:dev}
 \centering\scriptsize\setlength{\tabcolsep}{3pt}
-\begin{tabular}{r p{4.6cm} p{5.2cm} p{6.2cm}}
+\begin{tabular}{r >{\raggedright\arraybackslash}p{4.6cm} >{\raggedright\arraybackslash}p{5.2cm} >{\raggedright\arraybackslash}p{6.2cm}}
 \toprule
 \# & Phase 2 plan & What was done & Reason and effect\\\midrule
 1 & Train encoders, adapters, quality and fusion heads & No training; frozen official HEAL checkpoint & Limited time and an 8 GB laptop GPU\\
@@ -211,7 +211,7 @@ Table~\ref{tab:dev} lists every difference between the Phase 2 methodology and w
 
 \section{Results and Analysis}\label{sec:results}
 \subsection{Two LiDAR cars (main experiment)}
-Table~\ref{tab:main} and Fig.~\ref{fig:main} give the main comparison at $D=100$ ms and 16 KiB. Cooperation is worth a lot: in C0 the unconstrained reference U0 beats ego-only by +15.34 points (95\% CI [+12.39, +18.46]), and in C3 ours beats ego-only by +12.11 [+10.05, +14.34]. How tiles are chosen matters. Random sharing (B2, 0.669) and uniform compression (B1, 0.640) fall below ego-only (B0, 0.675) in C3, because the frozen fusion network was never trained on sparse or block-averaged features. Both confidence-based selectors recover most of the gap (3-trace means: B3 0.793, ours 0.796, U0 0.867).
+Table~\ref{tab:main} and Fig.~\ref{fig:main} give the main comparison at $D=100$ ms and 16 KiB. Cooperation helps a great deal: in C0 the unconstrained reference U0 beats ego-only by +15.34 points (95\% CI [+12.39, +18.46]), and in C3 ours beats ego-only by +12.11 [+10.05, +14.34]. How tiles are chosen matters. Random sharing (B2, 0.669) and uniform compression (B1, 0.640) fall below ego-only (B0, 0.675) in C3, because the frozen fusion network was never trained on sparse or block-averaged features. Both confidence-based selectors recover most of the gap (3-trace means: B3 0.793, ours 0.796, U0 0.867).
 
 \input{tab_main.tex}
 
@@ -274,7 +274,7 @@ For the LiDAR pair in C3 at IoU 0.5 (one link trace), 8,722 critical-region obje
 \begin{table*}[t]
 \caption{Base papers: problem, method, data, metric, reported result and limitation relative to this study. Starred results are quoted from the authors, not reproduced.}\label{tab:base}
 \centering\scriptsize\setlength{\tabcolsep}{3pt}
-\begin{tabular}{p{1.9cm}p{3.0cm}p{3.1cm}p{1.9cm}p{3.0cm}p{3.7cm}}
+\begin{tabular}{>{\raggedright\arraybackslash}p{1.9cm}>{\raggedright\arraybackslash}p{3.0cm}>{\raggedright\arraybackslash}p{3.1cm}>{\raggedright\arraybackslash}p{1.9cm}>{\raggedright\arraybackslash}p{3.0cm}>{\raggedright\arraybackslash}p{3.7cm}}
 \toprule
 Paper & Problem & Method & Data & Reported result$^*$ & Limitation for this gap\\\midrule
 Where2comm \cite{hu2022where2comm} & Bandwidth-limited cooperative detection & Confidence map selects what to send & OPV2V and 3 others & More than 100,000$\times$ lower communication volume on OPV2V, still ahead of DiscoNet and V2X-ViT & No delay or loss model; no sensor degradation; trained\\
@@ -309,11 +309,11 @@ Table~\ref{tab:abl} and Fig.~\ref{fig:main}(b) show the C3 ablations. Removing t
 A training-free policy that ranks BEV tiles by sender quality and confidence, adds a receiver-need term and a critical-region prior, and admits only tiles that can arrive before the deadline gave a small, statistically reliable accuracy gain over a confidence-only selector (+0.40 points AP@0.7, 10 link traces) with 35\% fewer bytes on a lossy link, and a larger gain (+2.42 points) for a camera-only ego car. The sender-quality term is the useful part; the need term and admission did not raise accuracy. Future work: train a fusion head on masked tiles, add PragComm and a real dataset such as V2V4Real, learn the quality proxy, test more car pairs, and use a validation split to set the policy constants.
 
 \section*{Declarations}
-\textbf{Data and code availability.} OPV2V \cite{xu2022opv2v} and the HEAL checkpoint \cite{lu2024heal} are public. The code, logs and figures behind every number are in the project submission folder. Repository: \url{https://github.com/Hassan07Ali/deadline-aware-semantic-comm-cooperative-perception}.
+\textbf{Data and code availability.} OPV2V \cite{xu2022opv2v} and the HEAL checkpoint \cite{lu2024heal} are public. The code, logs and figures behind every number are in the public repository \url{https://github.com/Hassan07Ali/deadline-aware-semantic-comm-cooperative-perception}.
 
-\textbf{Conflict of interest and funding.} None declared. \TODO{confirm}
+\textbf{Conflict of interest and funding.} The authors declare no conflict of interest and received no external funding.
 
-\textbf{AI-tool usage.} The authors used Claude (Anthropic), through Claude Code, to help write and debug the experiment code, to make figures and tables from the saved logs, to look up and check references, and to draft and edit this text. The authors reviewed the content and take responsibility for it. \TODO{confirm this wording meets the course's AI-disclosure rule}
+\textbf{AI-tool usage.} The authors used Claude (Anthropic), through Claude Code, to help write and debug the experiment code, to make figures and tables from the saved logs, to look up and check references, and to draft and edit this text. The authors reviewed the content and take responsibility for it.
 
 \textbf{Acknowledgements.} The authors thank Ms.\ Laraib Afzal for feedback.
 

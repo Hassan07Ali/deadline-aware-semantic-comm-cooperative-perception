@@ -1,9 +1,9 @@
-\begin{table}[t]\caption{Ablations in C3. AP@0.7 is from the LiDAR-pair run (Experiment A). The last two columns give variant $-$ ours (points, 95\% scene CI) for Experiment A (LiDAR pair) and Experiment C (camera ego).}\label{tab:abl}
-\centering\scriptsize\setlength{\tabcolsep}{1.4pt}\begin{tabular}{lccc}\toprule Variant & AP@0.7 & $\Delta$ Exp.\ A & $\Delta$ Exp.\ C\\\midrule
-Ours (full) & 0.796 & -- & --\\
-A1 no quality & 0.793 & $-$0.35 [$-$0.53, $-$0.18] & $-$1.51 [$-$1.90, $-$1.10]\\
-A2 no need & 0.797 & +0.02 [$-$0.03, +0.08] & +0.25 [+0.10, +0.39]\\
-A3 no admission & 0.797 & +0.03 [$-$0.04, +0.10] & 0.00 [0.00, 0.00]\\
-A7 oracle feedback & 0.796 & +0.02 [$-$0.01, +0.04] & --\\
-R1 one retry & 0.800 & +0.35 [+0.26, +0.45] & --\\
+\begin{table}[t]\caption{Ablations in C3 (the full policy has AP@0.7 = 0.796 in Experiment A). Variant $-$ ours, in AP@0.7 points with 95\% scene CI, for Experiment A (LiDAR pair) and Experiment C (camera ego).}\label{tab:abl}
+\centering\scriptsize\setlength{\tabcolsep}{4pt}\begin{tabular}{lcc}\toprule Variant & $\Delta$ Exp.\ A & $\Delta$ Exp.\ C\\\midrule
+Ours (full) & -- & --\\
+A1 no quality & $-$0.35 [$-$0.53, $-$0.18] & $-$1.51 [$-$1.90, $-$1.10]\\
+A2 no need & +0.02 [$-$0.03, +0.08] & +0.25 [+0.10, +0.39]\\
+A3 no admission & +0.03 [$-$0.04, +0.10] & 0.00 [0.00, 0.00]\\
+A7 oracle feedback & +0.02 [$-$0.01, +0.04] & --\\
+R1 one retry & +0.35 [+0.26, +0.45] & --\\
 \bottomrule\end{tabular}\end{table}
