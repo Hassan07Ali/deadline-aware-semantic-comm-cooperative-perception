@@ -1,0 +1,10 @@
+\begin{table}[t]\caption{Main comparison, LiDAR ego car and LiDAR collaborator, condition C3 (degraded sensors and bad link), $D$ = 100 ms, 16 KiB budget. AP is the mean over 3 link traces. Critical recall is recall inside the critical region at IoU 0.5.}\label{tab:main}
+\centering\scriptsize\setlength{\tabcolsep}{2.6pt}\begin{tabular}{lccccc}\toprule
+Method & AP@0.5 & AP@0.7 & Crit.\ rec. & Bytes & C0 AP@0.7\\\midrule
+Ego only & 0.785 & 0.675 & 0.730 & 0 & 0.783\\
+Uniform & 0.752 & 0.640 & 0.722 & 11,278 & 0.752\\
+Random & 0.760 & 0.669 & 0.743 & 14,506 & 0.798\\
+Confidence-only & 0.878 & 0.793 & 0.928 & 14,506 & 0.910\\
+\textbf{Ours} & \textbf{0.880} & \textbf{0.796} & \textbf{0.937} & \textbf{9,415} & \textbf{0.911}\\
+Unconstrained & 0.933 & 0.867 & 0.968 & -- & 0.936\\
+\bottomrule\end{tabular}\end{table}

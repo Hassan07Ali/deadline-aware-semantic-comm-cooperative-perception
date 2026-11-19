@@ -1,0 +1,2 @@
+TIMING sec/frame (incl. data loading) mean 0.145 median 0.121 n=2170; peak GPU MB 451
+The Average Precision at IOU 0.3 is 0.98, The Average Precision at IOU 0.5 is 0.97, The Average Precision at IOU 0.7 is 0.94

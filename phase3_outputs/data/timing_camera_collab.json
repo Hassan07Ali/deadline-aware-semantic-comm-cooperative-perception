@@ -1,0 +1,13 @@
+{
+  "t_enc_ego_ms": 7.936477999464842,
+  "t_enc_col_ms": 68.65444649884012,
+  "t_occ_ms": 12.241369997354923,
+  "t_select_ms": 12.653108999074902,
+  "T_reserve_coop_ms": 77.60438900186273,
+  "T_coop_median_ms": 53.093606500624446,
+  "T_ego_det_ms": 50.77585374965565,
+  "T_ego_median_ms": 35.376960498979315,
+  "n_frames": 116,
+  "device": "NVIDIA GeForce RTX 5050 Laptop GPU",
+  "note": "medians of per-frame measurements (encoders: p50; receiver/detection: p95 as Phase 2 T_reserve); fp32; RTX 5050 laptop"
+}

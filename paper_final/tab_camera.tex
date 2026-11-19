@@ -1,0 +1,10 @@
+\begin{table}[t]\caption{AP@0.7 with one camera car. Experiment B: LiDAR ego, camera collaborator ($D$ = 250 ms). Experiment C: camera ego, LiDAR collaborator ($D$ = 150 ms). 16 KiB budget, 3 traces.}\label{tab:camera}
+\centering\scriptsize\setlength{\tabcolsep}{4pt}\begin{tabular}{lcccc}\toprule & \multicolumn{2}{c}{Exp.\ B (LiDAR ego)} & \multicolumn{2}{c}{Exp.\ C (camera ego)}\\\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+Method & C0 & C3 & C0 & C3\\\midrule
+Ego only & 0.783 & 0.674 & 0.164 & 0.000\\
+Uniform & 0.424 & 0.391 & 0.117 & 0.000\\
+Random & 0.789 & 0.666 & 0.175 & 0.003\\
+Confidence-only & 0.858 & 0.668 & 0.553 & 0.307\\
+\textbf{Ours} & \textbf{0.858} & \textbf{0.672} & \textbf{0.560} & \textbf{0.332}\\
+Unconstrained & 0.850 & 0.675 & 0.710 & 0.550\\
+\bottomrule\end{tabular}\end{table}

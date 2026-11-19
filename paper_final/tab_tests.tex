@@ -1,0 +1,11 @@
+\begin{table}[t]\caption{Paired scene-level bootstrap (2,000 resamples over 16 scenes, Holm-adjusted $p$). $\Delta$ is the difference in AP@0.7 in percentage points. The first row uses 10 link traces, the others 3.}\label{tab:tests}
+\centering\scriptsize\setlength{\tabcolsep}{2.5pt}\begin{tabular}{lccc}\toprule Comparison & $\Delta$ (pts) & 95\% CI & Holm $p$\\\midrule
+H1: ours $-$ B3, C3 (10 traces) & +0.40 & [+0.23, +0.59] & $<$0.001\\
+ours $-$ B3, C3 (3 traces) & +0.36 & [+0.20, +0.53] & 0.001\\
+same, AP@0.5 & +0.15 & [+0.01, +0.28] & 0.175\\
+ours $-$ B0, C3 & +12.11 & [+10.05, +14.34] & 0.001\\
+ours $-$ B2, C3 & +12.69 & [+10.86, +14.79] & 0.001\\
+ours $-$ B1, C3 & +15.61 & [+13.01, +18.37] & 0.001\\
+H3: ours $-$ B3, C0 & +0.05 & [$-$0.08, +0.17] & 1.000\\
+U0 $-$ B0, C0 & +15.34 & [+12.39, +18.46] & 0.001\\
+\bottomrule\end{tabular}\end{table}

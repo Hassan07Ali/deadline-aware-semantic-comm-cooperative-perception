@@ -1,0 +1,13 @@
+{
+  "n_crit": 8722,
+  "categories": {
+    "detected": 8182,
+    "no sensor evidence (no LiDAR points)": 119,
+    "sensor outage frame": 304,
+    "used but still missed (quantisation / fusion)": 63,
+    "detector error (U0 with all features also misses)": 26,
+    "not selected": 13,
+    "lost in transmission": 15
+  },
+  "recovered_by_cooperation": 1832
+}

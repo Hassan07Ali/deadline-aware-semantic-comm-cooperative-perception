@@ -1,0 +1,156 @@
+[
+  {
+    "test": "H1: ours - B3, C3",
+    "thr": 0.7,
+    "delta_AP": 0.0036125138068563802,
+    "scene_CI_lo": 0.001981542454047163,
+    "scene_CI_hi": 0.0052791946237318995,
+    "p_scene": 0.0,
+    "frame_block_CI_lo": 0.001813905064821709,
+    "frame_block_CI_hi": 0.005296816628490032,
+    "p_holm": 0.0014
+  },
+  {
+    "test": "H1b: ours - B3, C3 (AP@0.5)",
+    "thr": 0.5,
+    "delta_AP": 0.001478691686846334,
+    "scene_CI_lo": 0.00011668739534844985,
+    "scene_CI_hi": 0.0027543026983446652,
+    "p_scene": 0.035,
+    "frame_block_CI_lo": 2.248710626511035e-05,
+    "frame_block_CI_hi": 0.002909204206748849,
+    "p_holm": 0.17500000000000002
+  },
+  {
+    "test": "ours - B2, C3",
+    "thr": 0.7,
+    "delta_AP": 0.12686931088550543,
+    "scene_CI_lo": 0.10860013007525911,
+    "scene_CI_hi": 0.14790639060444702,
+    "p_scene": 0.0,
+    "frame_block_CI_lo": 0.11519114962795368,
+    "frame_block_CI_hi": 0.13944688157361582,
+    "p_holm": 0.0014
+  },
+  {
+    "test": "ours - B0 (ego only), C3",
+    "thr": 0.7,
+    "delta_AP": 0.12107631842100826,
+    "scene_CI_lo": 0.10050634314186078,
+    "scene_CI_hi": 0.14335480471982023,
+    "p_scene": 0.0,
+    "frame_block_CI_lo": 0.10964061331284264,
+    "frame_block_CI_hi": 0.13441593795533452,
+    "p_holm": 0.0014
+  },
+  {
+    "test": "B3 - B0, C3",
+    "thr": 0.7,
+    "delta_AP": 0.11746380461415189,
+    "scene_CI_lo": 0.09688385680685815,
+    "scene_CI_hi": 0.1401022147304716,
+    "p_scene": 0.0,
+    "frame_block_CI_lo": 0.10721336604642027,
+    "frame_block_CI_hi": 0.13035645042290786,
+    "p_holm": 0.0014
+  },
+  {
+    "test": "H2/A3: ours - no-admission, C3",
+    "thr": 0.7,
+    "delta_AP": -0.0002925445566749711,
+    "scene_CI_lo": -0.0009647395736425775,
+    "scene_CI_hi": 0.00035544788019312894,
+    "p_scene": 0.348,
+    "frame_block_CI_lo": -0.0008268951430917251,
+    "frame_block_CI_hi": 0.00024148189474839515,
+    "p_holm": 1.0
+  },
+  {
+    "test": "A1: ours - no-quality, C3",
+    "thr": 0.7,
+    "delta_AP": 0.003500786782492401,
+    "scene_CI_lo": 0.0017557891845842648,
+    "scene_CI_hi": 0.00529723868369984,
+    "p_scene": 0.0,
+    "frame_block_CI_lo": 0.0017491840521021448,
+    "frame_block_CI_hi": 0.00527750461651604,
+    "p_holm": 0.0014
+  },
+  {
+    "test": "A2: ours - no-need, C3",
+    "thr": 0.7,
+    "delta_AP": -0.0002482155169005,
+    "scene_CI_lo": -0.0008255010665990197,
+    "scene_CI_hi": 0.00031435308013071263,
+    "p_scene": 0.393,
+    "frame_block_CI_lo": -0.000694139401886155,
+    "frame_block_CI_hi": 0.00024888717937728965,
+    "p_holm": 1.0
+  },
+  {
+    "test": "H3: ours - B3, C0 (non-inferiority margin -0.01)",
+    "thr": 0.7,
+    "delta_AP": 0.0005180549964507453,
+    "scene_CI_lo": -0.0008299252338156204,
+    "scene_CI_hi": 0.0016591107434335533,
+    "p_scene": 0.395,
+    "frame_block_CI_lo": -0.0006709107282149573,
+    "frame_block_CI_hi": 0.0016539420479201954,
+    "p_holm": 1.0
+  },
+  {
+    "test": "U0 - B0, C0 (value of cooperation)",
+    "thr": 0.7,
+    "delta_AP": 0.15335842293183966,
+    "scene_CI_lo": 0.12391193975639296,
+    "scene_CI_hi": 0.18463560843711213,
+    "p_scene": 0.0,
+    "frame_block_CI_lo": 0.13854528887938095,
+    "frame_block_CI_hi": 0.1693901500354117,
+    "p_holm": 0.0014
+  },
+  {
+    "test": "ours - B1 (uniform compression), C3",
+    "thr": 0.7,
+    "delta_AP": 0.15609314548151373,
+    "scene_CI_lo": 0.13011233995155008,
+    "scene_CI_hi": 0.18367982279200046,
+    "p_scene": 0.0,
+    "frame_block_CI_lo": 0.1411359268529672,
+    "frame_block_CI_hi": 0.17166895301999074,
+    "p_holm": 0.0014
+  },
+  {
+    "test": "A7: oracle same-frame feedback - ours, C3",
+    "thr": 0.7,
+    "delta_AP": 0.00015036297749093652,
+    "scene_CI_lo": -0.00010852147613222192,
+    "scene_CI_hi": 0.00042921481882167895,
+    "p_scene": 0.306,
+    "frame_block_CI_lo": -0.00024996891942547596,
+    "frame_block_CI_hi": 0.0005750581228721684,
+    "p_holm": 1.0
+  },
+  {
+    "test": "R1: ours + one retry - ours, C3",
+    "thr": 0.7,
+    "delta_AP": 0.0034508625826945214,
+    "scene_CI_lo": 0.0026369801519372923,
+    "scene_CI_hi": 0.004460025655918985,
+    "p_scene": 0.0,
+    "frame_block_CI_lo": 0.002863945358070156,
+    "frame_block_CI_hi": 0.004047707063321345,
+    "p_holm": 0.0014
+  },
+  {
+    "test": "A2: ours - no-need, C0",
+    "thr": 0.7,
+    "delta_AP": -0.0011247855843770083,
+    "scene_CI_lo": -0.0017672753938745372,
+    "scene_CI_hi": -0.0004910499057283776,
+    "p_scene": 0.0,
+    "frame_block_CI_lo": -0.0016184140236481458,
+    "frame_block_CI_hi": -0.0006131263022278926,
+    "p_holm": 0.0014
+  }
+]

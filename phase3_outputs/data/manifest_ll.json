@@ -1,0 +1,255 @@
+{
+  "2021_08_18_19_48_05": {
+    "cavs": [
+      "1045",
+      "1054"
+    ],
+    "collab": "1054",
+    "ego": "1045",
+    "first_frame": "000068",
+    "frames_in_range": 59,
+    "frames_out_of_range": 119,
+    "last_frame": "000422",
+    "max_dist_m": 166.3,
+    "mean_dist_m": 103.0,
+    "n_frames": 178
+  },
+  "2021_08_20_21_10_24": {
+    "cavs": [
+      "1996",
+      "2005",
+      "2014"
+    ],
+    "collab": "2014",
+    "ego": "1996",
+    "first_frame": "000069",
+    "frames_in_range": 98,
+    "frames_out_of_range": 0,
+    "last_frame": "000263",
+    "max_dist_m": 50.07,
+    "mean_dist_m": 25.33,
+    "n_frames": 98
+  },
+  "2021_08_21_09_28_12": {
+    "cavs": [
+      "623",
+      "632",
+      "641"
+    ],
+    "collab": "632",
+    "ego": "623",
+    "first_frame": "000069",
+    "frames_in_range": 147,
+    "frames_out_of_range": 0,
+    "last_frame": "000361",
+    "max_dist_m": 60.91,
+    "mean_dist_m": 31.51,
+    "n_frames": 147
+  },
+  "2021_08_22_07_52_02": {
+    "cavs": [
+      "3477",
+      "3486",
+      "3495",
+      "3504",
+      "3513"
+    ],
+    "collab": "3504",
+    "ego": "3486",
+    "first_frame": "000071",
+    "frames_in_range": 167,
+    "frames_out_of_range": 0,
+    "last_frame": "000403",
+    "max_dist_m": 17.41,
+    "mean_dist_m": 5.92,
+    "n_frames": 167
+  },
+  "2021_08_22_09_08_29": {
+    "cavs": [
+      "5933",
+      "5942"
+    ],
+    "collab": "5942",
+    "ego": "5933",
+    "first_frame": "000068",
+    "frames_in_range": 151,
+    "frames_out_of_range": 0,
+    "last_frame": "000368",
+    "max_dist_m": 55.39,
+    "mean_dist_m": 50.13,
+    "n_frames": 151
+  },
+  "2021_08_22_21_41_24": {
+    "cavs": [
+      "886",
+      "895",
+      "904"
+    ],
+    "collab": "895",
+    "ego": "886",
+    "first_frame": "000069",
+    "frames_in_range": 71,
+    "frames_out_of_range": 0,
+    "last_frame": "000209",
+    "max_dist_m": 11.32,
+    "mean_dist_m": 9.96,
+    "n_frames": 71
+  },
+  "2021_08_23_12_58_19": {
+    "cavs": [
+      "357",
+      "366"
+    ],
+    "collab": "366",
+    "ego": "357",
+    "first_frame": "000068",
+    "frames_in_range": 104,
+    "frames_out_of_range": 0,
+    "last_frame": "000274",
+    "max_dist_m": 10.88,
+    "mean_dist_m": 10.65,
+    "n_frames": 104
+  },
+  "2021_08_23_15_19_19": {
+    "cavs": [
+      "8690",
+      "8699"
+    ],
+    "collab": "8699",
+    "ego": "8690",
+    "first_frame": "000068",
+    "frames_in_range": 167,
+    "frames_out_of_range": 0,
+    "last_frame": "000400",
+    "max_dist_m": 41.01,
+    "mean_dist_m": 23.03,
+    "n_frames": 167
+  },
+  "2021_08_23_16_06_26": {
+    "cavs": [
+      "243",
+      "252",
+      "261"
+    ],
+    "collab": "252",
+    "ego": "243",
+    "first_frame": "000069",
+    "frames_in_range": 134,
+    "frames_out_of_range": 0,
+    "last_frame": "000335",
+    "max_dist_m": 40.66,
+    "mean_dist_m": 18.29,
+    "n_frames": 134
+  },
+  "2021_08_23_17_22_47": {
+    "cavs": [
+      "574",
+      "583",
+      "592"
+    ],
+    "collab": "592",
+    "ego": "574",
+    "first_frame": "000069",
+    "frames_in_range": 102,
+    "frames_out_of_range": 0,
+    "last_frame": "000271",
+    "max_dist_m": 53.94,
+    "mean_dist_m": 24.87,
+    "n_frames": 102
+  },
+  "2021_08_23_21_07_10": {
+    "cavs": [
+      "160",
+      "169",
+      "178"
+    ],
+    "collab": "178",
+    "ego": "160",
+    "first_frame": "000069",
+    "frames_in_range": 141,
+    "frames_out_of_range": 0,
+    "last_frame": "000349",
+    "max_dist_m": 47.13,
+    "mean_dist_m": 24.76,
+    "n_frames": 141
+  },
+  "2021_08_23_21_47_19": {
+    "cavs": [
+      "225",
+      "234",
+      "243"
+    ],
+    "collab": "243",
+    "ego": "225",
+    "first_frame": "000069",
+    "frames_in_range": 77,
+    "frames_out_of_range": 0,
+    "last_frame": "000221",
+    "max_dist_m": 42.26,
+    "mean_dist_m": 21.96,
+    "n_frames": 77
+  },
+  "2021_08_24_07_45_41": {
+    "cavs": [
+      "121",
+      "130",
+      "139",
+      "148"
+    ],
+    "collab": "148",
+    "ego": "121",
+    "first_frame": "000070",
+    "frames_in_range": 135,
+    "frames_out_of_range": 0,
+    "last_frame": "000338",
+    "max_dist_m": 50.58,
+    "mean_dist_m": 40.1,
+    "n_frames": 135
+  },
+  "2021_08_24_11_37_54": {
+    "cavs": [
+      "301",
+      "310",
+      "319"
+    ],
+    "collab": "310",
+    "ego": "301",
+    "first_frame": "000069",
+    "frames_in_range": 104,
+    "frames_out_of_range": 0,
+    "last_frame": "000275",
+    "max_dist_m": 31.32,
+    "mean_dist_m": 28.07,
+    "n_frames": 104
+  },
+  "2021_08_24_20_09_18": {
+    "cavs": [
+      "3174",
+      "3183"
+    ],
+    "collab": "3183",
+    "ego": "3174",
+    "first_frame": "000068",
+    "frames_in_range": 220,
+    "frames_out_of_range": 0,
+    "last_frame": "000506",
+    "max_dist_m": 29.99,
+    "mean_dist_m": 20.17,
+    "n_frames": 220
+  },
+  "2021_08_24_20_49_54": {
+    "cavs": [
+      "207",
+      "216"
+    ],
+    "collab": "216",
+    "ego": "207",
+    "first_frame": "000068",
+    "frames_in_range": 174,
+    "frames_out_of_range": 0,
+    "last_frame": "000414",
+    "max_dist_m": 11.36,
+    "mean_dist_m": 10.34,
+    "n_frames": 174
+  }
+}

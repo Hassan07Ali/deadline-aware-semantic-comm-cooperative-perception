@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/e0A11255cSSUOWFDe28H6wpgF+k</id>
+  <title>arXiv Query: search_query=&amp;id_list=2209.12836,2503.03430,2602.13287,2511.17843&amp;start=0&amp;max_results=10</title>
+  <updated>2026-11-19T16:13:48Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=10&amp;id_list=2209.12836,2503.03430,2602.13287,2511.17843" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+  <opensearch:totalResults>4</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2511.17843v2</id>
+    <title>JigsawComm: Joint Semantic Feature Encoding and Transmission for Communication-Efficient Cooperative Perception</title>
+    <updated>2026-03-13T01:56:09Z</updated>
+    <link href="https://arxiv.org/abs/2511.17843v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2511.17843v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-agent cooperative perception (CP) promises to overcome the inherent occlusion and range limitations of single-agent systems in autonomous driving, yet its practicality is severely constrained by limited Vehicle-to-Everything (V2X) communication bandwidth. Existing approaches attempt to improve bandwidth efficiency via compression or heuristic message selection, but neglect the semantic relevance and cross-agent redundancy of the transmitted data. In this paper, we formulate a joint semantic feature encoding and transmission problem that maximizes CP accuracy under a communication budget, and introduce JigsawComm, an end-to-end semantic-aware framework that learns to ``assemble the puzzle'' of multi-agent feature transmission. JigsawComm uses a regularized encoder to extract \emph{sparse, semantically relevant features}, and a lightweight Feature Utility Estimator (FUE) to predict each agent's per-cell contribution to the downstream perception task. The FUE-generated compact meta utility maps are exchanged among agents and used to compute an optimal transmission policy under the learned utility proxy. This policy inherently \emph{eliminates cross-agent redundancy}, bounding the feature transmission payload to $\mathcal{O}(1)$ as the number of agents grows, while the meta information overhead remains negligible. The whole pipeline is trained end-to-end through a differentiable scheduling module, informing the FUE to be aligned with the task objective. On the OPV2V and DAIR-V2X benchmarks, JigsawComm reduces total data volume by over 20--500${\times}$ while matching or exceeding the accuracy of state-of-the-art methods.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-11-21T23:36:24Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Chenyi Wang</name>
+    </author>
+    <author>
+      <name>Zhaowei Li</name>
+    </author>
+    <author>
+      <name>Ming F. Li</name>
+    </author>
+    <author>
+      <name>Wujie Wen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.13287v3</id>
+    <title>COOPERTRIM: Adaptive Data Selection for Uncertainty-Aware Cooperative Perception</title>
+    <updated>2026-02-27T15:29:04Z</updated>
+    <link href="https://arxiv.org/abs/2602.13287v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.13287v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Cooperative perception enables autonomous agents to share encoded representations over wireless communication to enhance each other's live situational awareness. However, the tension between the limited communication bandwidth and the rich sensor information hinders its practical deployment. Recent studies have explored selection strategies that share only a subset of features per frame while striving to keep the performance on par. Nevertheless, the bandwidth requirement still stresses current wireless technologies. To fundamentally ease the tension, we take a proactive approach, exploiting the temporal continuity to identify features that capture environment dynamics, while avoiding repetitive and redundant transmission of static information. By incorporating temporal awareness, agents are empowered to dynamically adapt the sharing quantity according to environment complexity. We instantiate this intuition into an adaptive selection framework, COOPERTRIM, which introduces a novel conformal temporal uncertainty metric to gauge feature relevance, and a data-driven mechanism to dynamically determine the sharing quantity. To evaluate COOPERTRIM, we take semantic segmentation and 3D detection as example tasks. Across multiple open-source cooperative segmentation and detection models, COOPERTRIM achieves up to 80.28% and 72.52% bandwidth reduction respectively while maintaining a comparable accuracy. Relative to other selection strategies, COOPERTRIM also improves IoU by as much as 45.54% with up to 72% less bandwidth. Combined with compression strategies, COOPERTRIM can further reduce bandwidth usage to as low as 1.46% without compromising IoU performance. Qualitative results show COOPERTRIM gracefully adapts to environmental dynamics, localization error, and communication latency, demonstrating flexibility and paving the way for real-world deployment.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.NI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-07T21:18:46Z</published>
+    <arxiv:comment>Accepted in ICLR 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Shilpa Mukhopadhyay</name>
+    </author>
+    <author>
+      <name>Amit Roy-Chowdhury</name>
+    </author>
+    <author>
+      <name>Hang Qiu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2209.12836v1</id>
+    <title>Where2comm: Communication-Efficient Collaborative Perception via Spatial Confidence Maps</title>
+    <updated>2022-09-26T16:41:18Z</updated>
+    <link href="https://arxiv.org/abs/2209.12836v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2209.12836v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-agent collaborative perception could significantly upgrade the perception performance by enabling agents to share complementary information with each other through communication. It inevitably results in a fundamental trade-off between perception performance and communication bandwidth. To tackle this bottleneck issue, we propose a spatial confidence map, which reflects the spatial heterogeneity of perceptual information. It empowers agents to only share spatially sparse, yet perceptually critical information, contributing to where to communicate. Based on this novel spatial confidence map, we propose Where2comm, a communication-efficient collaborative perception framework. Where2comm has two distinct advantages: i) it considers pragmatic compression and uses less communication to achieve higher perception performance by focusing on perceptually critical areas; and ii) it can handle varying communication bandwidth by dynamically adjusting spatial areas involved in communication. To evaluate Where2comm, we consider 3D object detection in both real-world and simulation scenarios with two modalities (camera/LiDAR) and two agent types (cars/drones) on four datasets: OPV2V, V2X-Sim, DAIR-V2X, and our original CoPerception-UAVs. Where2comm consistently outperforms previous methods; for example, it achieves more than $100,000 \times$ lower communication volume and still outperforms DiscoNet and V2X-ViT on OPV2V. Our code is available at https://github.com/MediaBrain-SJTU/where2comm.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-09-26T16:41:18Z</published>
+    <arxiv:comment>24 pages, 19 figures, Accepted by Neurips 2022</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Yue Hu</name>
+    </author>
+    <author>
+      <name>Shaoheng Fang</name>
+    </author>
+    <author>
+      <name>Zixing Lei</name>
+    </author>
+    <author>
+      <name>Yiqi Zhong</name>
+    </author>
+    <author>
+      <name>Siheng Chen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.03430v1</id>
+    <title>CoSDH: Communication-Efficient Collaborative Perception via Supply-Demand Awareness and Intermediate-Late Hybridization</title>
+    <updated>2025-03-05T12:02:04Z</updated>
+    <link href="https://arxiv.org/abs/2503.03430v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2503.03430v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-agent collaborative perception enhances perceptual capabilities by utilizing information from multiple agents and is considered a fundamental solution to the problem of weak single-vehicle perception in autonomous driving. However, existing collaborative perception methods face a dilemma between communication efficiency and perception accuracy. To address this issue, we propose a novel communication-efficient collaborative perception framework based on supply-demand awareness and intermediate-late hybridization, dubbed as \mymethodname. By modeling the supply-demand relationship between agents, the framework refines the selection of collaboration regions, reducing unnecessary communication cost while maintaining accuracy. In addition, we innovatively introduce the intermediate-late hybrid collaboration mode, where late-stage collaboration compensates for the performance degradation in collaborative perception under low communication bandwidth. Extensive experiments on multiple datasets, including both simulated and real-world scenarios, demonstrate that \mymethodname~ achieves state-of-the-art detection accuracy and optimal bandwidth trade-offs, delivering superior detection precision under real communication bandwidths, thus proving its effectiveness and practical applicability. The code will be released at https://github.com/Xu2729/CoSDH.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-03-05T12:02:04Z</published>
+    <arxiv:comment>Accepted at CVPR 2025</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Junhao Xu</name>
+    </author>
+    <author>
+      <name>Yanan Zhang</name>
+    </author>
+    <author>
+      <name>Zhi Cai</name>
+    </author>
+    <author>
+      <name>Di Huang</name>
+    </author>
+  </entry>
+</feed>

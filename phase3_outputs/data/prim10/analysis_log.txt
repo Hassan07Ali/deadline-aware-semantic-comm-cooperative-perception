@@ -1,0 +1,8 @@
+cond method   D    B    AP@0.3 AP@0.5 AP@0.7  crit-rec  bytes   coop  miss
+C3  B3     100  16384 0.886  0.878  0.792  0.927   14506  0.89  0.00
+C3  ours   100  16384 0.887  0.879  0.796  0.937    9401  0.89  0.00
+
+Paired bootstrap (2000 resamples over the 16 scenes; Holm over the family):
+  H1: ours - B3, C3                                       dAP@0.7 =  +0.40 pts  scene-95%CI [+0.23,+0.59]  block-95%CI [+0.22,+0.56]  p_holm=0.000
+  H1b: ours - B3, C3 (AP@0.5)                             dAP@0.5 =  +0.16 pts  scene-95%CI [-0.04,+0.31]  block-95%CI [+0.02,+0.29]  p_holm=0.109
+figures + tables saved to /home/hassan/cnet/out/final/prim10

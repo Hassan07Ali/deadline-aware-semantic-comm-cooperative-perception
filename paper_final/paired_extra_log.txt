@@ -1,0 +1,10 @@
+# stress (ST bad link, ST1 good link), 2000 scene-bootstrap resamples, seed 0
+ST D=100 B=16384: ours - B3: dAP@0.7 = +0.73 pts  scene-95%CI [+0.49,+1.01]  p=0.000
+ST D=100 B=16384: ours - A1: dAP@0.7 = +0.54 pts  scene-95%CI [+0.38,+0.72]  p=0.000
+ST D=100 B=16384: ours - A3: dAP@0.7 = -0.06 pts  scene-95%CI [-0.10,-0.02]  p=0.003
+ST D=100 B=16384: ours - B0: dAP@0.7 = +13.00 pts  scene-95%CI [+11.03,+15.17]  p=0.000
+ST1 D=100 B=16384: ours - B3: dAP@0.7 = +0.71 pts  scene-95%CI [+0.47,+0.99]  p=0.000
+# camera ego + LiDAR collaborator, budget sweep, C3, D=150
+C3 D=150 B=8192: ours - B3: dAP@0.7 = +1.59 pts  scene-95%CI [+1.06,+2.21]  p=0.000
+C3 D=150 B=32768: ours - B3: dAP@0.7 = +1.98 pts  scene-95%CI [+1.47,+2.65]  p=0.000
+C3 D=150 B=65536: ours - B3: dAP@0.7 = +1.56 pts  scene-95%CI [+1.06,+2.14]  p=0.000

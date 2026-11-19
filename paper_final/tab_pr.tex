@@ -1,0 +1,10 @@
+\begin{table}[t]\caption{Precision (P), recall (R) and F1 in C3 at a fixed score threshold of 0.5, chosen before the runs. Pooled over all frames and 3 link traces (83,148 ground-truth vehicles). No intervals are computed.}\label{tab:pr}
+\centering\scriptsize\setlength{\tabcolsep}{3pt}\begin{tabular}{lcccccc}\toprule & \multicolumn{3}{c}{IoU 0.5} & \multicolumn{3}{c}{IoU 0.7}\\\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+Method & P & R & F1 & P & R & F1\\\midrule
+Ego only & 0.984 & 0.645 & 0.779 & 0.914 & 0.599 & 0.724\\
+Uniform & 0.989 & 0.525 & 0.686 & 0.928 & 0.493 & 0.644\\
+Random & 0.992 & 0.561 & 0.717 & 0.944 & 0.533 & 0.682\\
+Confidence-only & 0.985 & 0.699 & 0.817 & 0.943 & 0.669 & 0.783\\
+\textbf{Ours} & 0.984 & 0.704 & 0.821 & 0.944 & 0.675 & 0.787\\
+Unconstrained & 0.982 & 0.783 & 0.871 & 0.951 & 0.758 & 0.844\\
+\bottomrule\end{tabular}\end{table}

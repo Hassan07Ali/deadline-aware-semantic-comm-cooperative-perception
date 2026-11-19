@@ -1,0 +1,10 @@
+critical-region objects examined (C3, D=100 ms, trace 0): 8722
+  detected                                                  8182   93.8 %
+  sensor outage frame                                        304    3.5 %
+  no sensor evidence (no LiDAR points)                       119    1.4 %
+  used but still missed (quantisation / fusion)               63    0.7 %
+  detector error (U0 with all features also misses)           26    0.3 %
+  lost in transmission                                        15    0.2 %
+  not selected                                                13    0.1 %
+  objects detected by ours but missed by ego-only B0 (recovered by cooperation): 1832
+saved
